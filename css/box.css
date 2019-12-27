@@ -3,14 +3,13 @@
 	user-select: none;
 }
 
+.final {
+	display: table;
+	margin: 0 auto;
+}
+
 .artboard {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	position: absolute;
-    left: 45%;
 }
 
 .artboard:hover .button {
@@ -25,10 +24,9 @@
 }
 
 .button i, .button a, .links i, .links a {
-	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	margin-top: 20px;
 	color: white;
 }
 

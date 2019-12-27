@@ -9,10 +9,21 @@
     background: #444;
   }
 
-  .column {
+  /* .column {
     float: left;
     width: 33.33%;
+  } */
+
+  .row {
+    position: relative;
   }
+
+  .grid {
+    display: grid;
+  grid-auto-rows: 50%;
+  grid-column-gap: 3%;
+  grid-row-gap: 6%;
+}
 
   .card__info {
       color: #fff;
@@ -20,13 +31,14 @@
   }
   
   .card {
+    margin-top: 10px;
+    margin-bottom: 10px;
     position: relative;
     background: #333;
-    width: 35vh;
-    height: 35vh;
+    width: auto;
+    height: auto;
     border-radius: 6px;
     padding: 2rem;
-    margin: 40px;
     color: #aaa;
     box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
       0 0 1rem rgba(0,0,0,0.2);
